@@ -1,0 +1,117 @@
+
+
+#myTextarea {
+    text-align: center;
+    align-items: center;
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #3498db; 
+    border-radius: 5px;
+    resize: none;
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+}
+
+.form1 {
+    max-width: auto;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 10px;
+    
+}
+
+h2 {
+    color: #333;
+}
+
+.label1 {
+    text-align: center;
+    /* display: block; */
+    margin-top: 10px;
+    color: #555;
+    max-width: 200px;
+}
+
+.input1 {
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: -40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.button1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button1:active {
+    background-color: rgb(69, 78, 160);
+}
+.button1:hover {
+    background-color: rgb(245, 121, 90);
+}
+
+
+.input1[type="text"]::placeholder,
+textarea::placeholder {
+    color: grey; /* Màu chữ mờ */
+    font-style: italic; /* Font chữ mờ */
+}
+
+
+
+
+/* Thiết lập kiểu dáng cho liên kết (a) */
+nav ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân dưới cho liên kết */
+    color: white; /* Màu chữ cho liên kết chưa được chọn */
+    font-weight: bold; /* Độ đậm của chữ */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+nav ul li ul {
+    display: none; /* Ẩn menu dropdown mặc định */
+    position: absolute; /* Tính vị trí tuyệt đối cho menu dropdown */
+    top: 100%; /* Đặt vị trí bên dưới mục cha */
+    left: 0; /* Đặt vị trí bắt đầu từ cạnh trái của mục cha */
+    background-color: #333; /* Màu nền của menu dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng cho menu dropdown */
+    z-index: 1; /* Hiển thị menu dropdown trên các phần tử khác */
+}
+
+/* Hiển thị menu dropdown khi di chuột qua mục cha */
+nav ul li:hover ul {
+    display: flex; /* Hiển thị menu dropdown khi di chuột qua mục cha */
+    flex-direction: column; /* Xếp chúng dọc theo chiều dọc */
+}
+
+/* Thiết lập kiểu dáng cho mỗi mục trong dropdown menu */
+nav ul li ul li {
+    display: block; /* Đặt mỗi mục dropdown thành một dòng */
+}
+
+/* Thiết lập kiểu dáng cho liên kết trong dropdown menu */
+nav ul li ul li a {
+    padding: 10px; /* Khoảng cách bên trong mỗi mục dropdown menu */
+    color: white; /* Màu chữ cho liên kết dropdown menu */
+    display: block; /* Đặt liên kết thành một dòng */
+}
+
+/* Hiệu ứng chuyển đổi màu khi di chuột qua liên kết trong dropdown menu */
+nav ul li ul li a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua liên kết dropdown menu */
+}
+/* Basic styling for the blog posts */
+/* Updated styling for the blog posts */
+/* Updated styling for the blog posts using flexbox */

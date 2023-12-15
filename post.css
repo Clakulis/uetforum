@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container1 {
+    /* height:auto; */
+    width: auto; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.05);
+}
+
+.post img {
+    width: 200px;
+    height: auto;
+    max-height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* Các quy tắc CSS cho modal */
+.modal1 {
+    display: none;
+    position: fixed;
+    align-items: center;
+    margin-left: 0px;
+    width: 80%;
+    height: 80%;
+     margin-top: 5%; 
+    margin-left: 10%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+}
+
+.modal-content {
+    display: block;
+    margin: auto; 
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+.modal img {
+    width: auto;
+    height: 700px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Các quy tắc CSS cho nút đóng */
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.description-container {
+    background-color: #79bff8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.reaction-comment-container, .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.react-container {
+    text-align: left;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Thêm transition */
+}
+
+.reaction-count {
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.like-container {
+    display: flex;
+    align-items: center;
+}
+
+.like-button {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.like-button:hover,
+.like-button.active {
+    transform: scale(1.2);
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+/* Optional: Style for active state (clicked) */
+.react-container.active .reaction-count {
+    color: red; /* Màu sắc khi nhấp chuột vào */
+}
+
+.comment-container {
+    text-align: right;
+}
+
+  
+
+
+.w3-button.active {
+    background-color: #98f133;
+    color: #ddd;
+}

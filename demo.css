@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Thiết lập kiểu dáng cho thanh menu (nav) */
+nav {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Đặt mục trung tâm theo chiều dọc */
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    flex: 1; /* Mục logo chiếm phần còn lại của không gian */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+/* Thiết lập kiểu dáng cho mỗi mục danh sách (li) */
+nav ul li {
+    position: relative;
+    display: flex;
+    align-items: center; /* Căng giữa theo chiều dọc */
+    margin-right: 100px; /* Khoảng cách giữa các mục menu */
+}
+
+nav ul li > ul {
+    display: none;
+}
+
+/* Thiết lập kiểu dáng cho liên kết (a) */
+nav ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân dưới cho liên kết */
+    color: white; /* Màu chữ cho liên kết chưa được chọn */
+    font-weight: bold; /* Độ đậm của chữ */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+/* Hiển thị ul con của li khi li được hover */
+nav ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li ul {
+    display: none; /* Ẩn menu dropdown mặc định */
+    position: absolute; /* Tính vị trí tuyệt đối cho menu dropdown */
+    top: 100%; /* Đặt vị trí bên dưới mục cha */
+    left: 0; /* Đặt vị trí bắt đầu từ cạnh trái của mục cha */
+    background-color: #333; /* Màu nền của menu dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng cho menu dropdown */
+    z-index: 1; /* Hiển thị menu dropdown trên các phần tử khác */
+}
+
+nav ul li ul li a {
+    text-decoration: none; /* Loại bỏ gạch chân dưới cho liên kết */
+    color: white; /* Màu chữ cho liên kết chưa được chọn */
+    font-weight: bold; /* Độ đậm của chữ */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+
+
+nav ul li ul li> ul {
+    display: none;
+}
+
+nav ul li ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hiển thị menu dropdown khi di chuột qua mục cha */
+nav ul li:hover ul {
+    display: flex; /* Hiển thị menu dropdown khi di chuột qua mục cha */
+    flex-direction: column; /* Xếp chúng dọc theo chiều dọc */
+}
+
+/* Thiết lập kiểu dáng cho mỗi mục trong dropdown menu */
+nav ul li ul li {
+    display: block; /* Đặt mỗi mục dropdown thành một dòng */
+}
+
+/* Thiết lập kiểu dáng cho liên kết trong dropdown menu */
+nav ul li ul li a {
+    padding: 10px; /* Khoảng cách bên trong mỗi mục dropdown menu */
+    color: white; /* Màu chữ cho liên kết dropdown menu */
+    display: block; /* Đặt liên kết thành một dòng */
+}
+
+/* Hiệu ứng chuyển đổi màu khi di chuột qua liên kết trong dropdown menu */
+nav ul li ul li a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua liên kết dropdown menu */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

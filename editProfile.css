@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #C6E6F2;
+}
+
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 25%; /* Điều chỉnh giá trị này để căn giữa h2 theo ý bạn */
+    transform: translate(-50%, -50%);
+}
+
+
+form {
+    font-size: 1rem;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    color: #555;
+    max-width: 200px;
+    text-align: left;
+}
+
+input {
+    width: 150%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    font-size: medium; 
+    width: 40%;
+    height: 30px;
+    background-color:chartreuse;
+    border-radius: 5%;
+    border: 2px solid;
+}
